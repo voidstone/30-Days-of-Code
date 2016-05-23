@@ -1,20 +1,12 @@
 import java.util.*;
 import java.io.*;
-class Calculator{
-
-    
-       static int power(int n1,int n2) throws Exception
-        {
-            int pow;
-            pow=(int)Math.pow(n1,n2);      
-            
+class Calculator {
+       static int power(int n1,int n2) throws Exception {
             if(n1<0 || n2<0){
                  throw new Exception("n and p should be non-negative");  
             }else{
-              return pow;
+              return (int)Math.pow(n1,n2);
             }
-            
-                
         }
 }
 class Solution{
